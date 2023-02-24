@@ -10,8 +10,7 @@ $mobile = $_POST['mobile'];
 //$mobile = mysqli_real_escape_string($conn, $mobile);
 
 // Connect to the MySQL database
-//$conn = mysqli_connect('localhost', 'prj', '12345', 'user');
-$conn = mysqli_connect('userdatabase.crnah3igzvus.us-east-1.rds.amazonaws.com', 'admin', '12345678', 'userdatabase');
+$conn = mysqli_connect('localhost', 'username', 'password', 'db_name');
 if (!$conn) {
 	die("Connection failed: " . mysqli_connect_error());
 }
